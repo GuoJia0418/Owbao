@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JSInvestDetailViewController" customModule="Owbao" customModuleProvider="target">
+            <connections>
+                <outlet property="bgScrollView" destination="cFs-31-mGD" id="Weg-ng-bot"/>
+                <outlet property="bottomBackgroundView" destination="MS2-s0-83P" id="Thp-TU-WvM"/>
+                <outlet property="bottomBackgroundViewHeightConstains" destination="tgs-54-PQY" id="FCf-MP-MR1"/>
+                <outlet property="buttonBottomIndicatorHeightConstrans" destination="hLJ-i1-BBu" id="uNh-Vq-6EL"/>
+                <outlet property="buttonBottomIndicatorView" destination="Isv-Tt-jjc" id="9Fa-Iz-W6u"/>
+                <outlet property="buyButton" destination="kwg-iS-afd" id="pNn-yh-nDU"/>
+                <outlet property="exprerienceBackgroundView" destination="Knv-Sa-hLb" id="2L6-2r-his"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFs-31-mGD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MS2-s0-83P">
+                    <rect key="frame" x="0.0" y="577" width="375" height="90"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Knv-Sa-hLb" userLabel="View_background">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="15"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwg-iS-afd">
+                            <rect key="frame" x="20" y="15" width="335" height="45"/>
+                            <color key="backgroundColor" red="0.96749734878540039" green="0.79223597049713135" blue="0.27101919054985046" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="ozp-Cl-Xtm"/>
+                            </constraints>
+                            <state key="normal" title="请登录后抢购"/>
+                            <connections>
+                                <action selector="buyClick:" destination="-1" eventType="touchUpInside" id="rNZ-cl-euT"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Isv-Tt-jjc">
+                            <rect key="frame" x="0.0" y="60" width="375" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="hLJ-i1-BBu"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="kwg-iS-afd" firstAttribute="top" secondItem="Knv-Sa-hLb" secondAttribute="bottom" id="2Ne-7N-S58"/>
+                        <constraint firstItem="Knv-Sa-hLb" firstAttribute="top" secondItem="MS2-s0-83P" secondAttribute="top" id="50t-0B-3hk"/>
+                        <constraint firstItem="Isv-Tt-jjc" firstAttribute="leading" secondItem="MS2-s0-83P" secondAttribute="leading" id="Uc7-Eh-FPn"/>
+                        <constraint firstItem="Knv-Sa-hLb" firstAttribute="leading" secondItem="MS2-s0-83P" secondAttribute="leading" id="Xtg-Aw-P2n"/>
+                        <constraint firstItem="Isv-Tt-jjc" firstAttribute="top" secondItem="kwg-iS-afd" secondAttribute="bottom" id="aZL-rP-wbJ"/>
+                        <constraint firstItem="kwg-iS-afd" firstAttribute="leading" secondItem="MS2-s0-83P" secondAttribute="leading" constant="20" id="jyI-hw-SQ2"/>
+                        <constraint firstAttribute="trailing" secondItem="Knv-Sa-hLb" secondAttribute="trailing" id="pEn-jT-oyh"/>
+                        <constraint firstAttribute="bottom" secondItem="Isv-Tt-jjc" secondAttribute="bottom" id="rtN-U5-AYh"/>
+                        <constraint firstAttribute="trailing" secondItem="Isv-Tt-jjc" secondAttribute="trailing" id="t3B-CB-i4p"/>
+                        <constraint firstAttribute="height" constant="90" id="tgs-54-PQY"/>
+                        <constraint firstAttribute="trailing" secondItem="kwg-iS-afd" secondAttribute="trailing" constant="20" id="v1f-vC-t4d"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94511431455612183" green="0.94509398937225342" blue="0.94509804248809814" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cFs-31-mGD" secondAttribute="trailing" id="3hY-qq-e5N"/>
+                <constraint firstItem="cFs-31-mGD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HLy-0n-Hff"/>
+                <constraint firstItem="cFs-31-mGD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IlV-4Z-nxR"/>
+                <constraint firstAttribute="trailing" secondItem="MS2-s0-83P" secondAttribute="trailing" id="dDp-h6-bss"/>
+                <constraint firstAttribute="bottom" secondItem="cFs-31-mGD" secondAttribute="bottom" id="eUM-KL-GQP"/>
+                <constraint firstItem="MS2-s0-83P" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fAH-V5-d4o"/>
+                <constraint firstAttribute="bottom" secondItem="MS2-s0-83P" secondAttribute="bottom" id="v3G-ib-OR0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="-449.5" y="-226.5"/>
+        </view>
+    </objects>
+</document>

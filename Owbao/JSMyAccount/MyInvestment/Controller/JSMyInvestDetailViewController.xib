@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JSMyInvestDetailViewController" customModule="DLapp" customModuleProvider="target">
+            <connections>
+                <outlet property="listView" destination="19T-Vu-4Vl" id="NN8-5Z-suc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="19T-Vu-4Vl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DE-P2-yIX">
+                    <rect key="frame" x="0.0" y="619" width="375" height="48"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="gMI-RZ-CbZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="查看回款记录">
+                        <color key="titleColor" red="0.45105960965156555" green="0.45104929804801941" blue="0.45105132460594177" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="seeBackRecordClick:" destination="-1" eventType="touchUpInside" id="58E-Pr-oeN"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="js_myInvest_history" translatesAutoresizingMaskIntoConstraints="NO" id="nIb-ql-D5b">
+                    <rect key="frame" x="110" y="636" width="16" height="15"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.94511431455612183" green="0.94509398937225342" blue="0.94509804248809814" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="6DE-P2-yIX" secondAttribute="bottom" id="3GQ-o4-FWe"/>
+                <constraint firstAttribute="trailing" secondItem="19T-Vu-4Vl" secondAttribute="trailing" id="4jp-jR-CLb"/>
+                <constraint firstItem="nIb-ql-D5b" firstAttribute="centerX" secondItem="6DE-P2-yIX" secondAttribute="centerX" constant="-70" id="5QT-IZ-mSl"/>
+                <constraint firstItem="19T-Vu-4Vl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="J4M-cy-hQf"/>
+                <constraint firstItem="19T-Vu-4Vl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Joj-ww-dWx"/>
+                <constraint firstItem="nIb-ql-D5b" firstAttribute="centerY" secondItem="6DE-P2-yIX" secondAttribute="centerY" id="LwN-VW-mZ2"/>
+                <constraint firstItem="6DE-P2-yIX" firstAttribute="top" secondItem="19T-Vu-4Vl" secondAttribute="bottom" id="MIM-1B-WDn"/>
+                <constraint firstAttribute="trailing" secondItem="6DE-P2-yIX" secondAttribute="trailing" id="j1b-w9-ghT"/>
+                <constraint firstItem="6DE-P2-yIX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jYx-gk-3fh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="js_myInvest_history" width="16" height="15"/>
+    </resources>
+</document>

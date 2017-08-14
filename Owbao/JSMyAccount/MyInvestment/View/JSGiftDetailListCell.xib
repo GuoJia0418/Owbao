@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="57" id="KGk-i7-Jjw" customClass="JSGiftDetailListCell" customModule="DLapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSA-2T-5bo">
+                        <rect key="frame" x="112" y="0.0" width="190" height="57"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="190" id="DWh-dt-ftR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的幸运码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faa-7b-oE4">
+                        <rect key="frame" x="13" y="0.0" width="74" height="57"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" placeholder="YES" id="r49-az-zhv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="r49-az-zhv"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="faa-7b-oE4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6v4-av-aOO"/>
+                    <constraint firstAttribute="bottom" secondItem="sSA-2T-5bo" secondAttribute="bottom" id="7ph-cH-3Da"/>
+                    <constraint firstItem="sSA-2T-5bo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" placeholder="YES" id="866-nF-m0l"/>
+                    <constraint firstItem="sSA-2T-5bo" firstAttribute="top" secondItem="faa-7b-oE4" secondAttribute="top" id="AeA-UC-Pys"/>
+                    <constraint firstItem="sSA-2T-5bo" firstAttribute="top" secondItem="faa-7b-oE4" secondAttribute="top" placeholder="YES" id="cl0-Ky-3CW"/>
+                    <constraint firstItem="faa-7b-oE4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="diw-jo-qMg"/>
+                    <constraint firstItem="sSA-2T-5bo" firstAttribute="leading" secondItem="faa-7b-oE4" secondAttribute="trailing" constant="25" id="gKu-SR-JvK"/>
+                    <constraint firstAttribute="bottom" secondItem="faa-7b-oE4" secondAttribute="bottom" id="rox-dK-tF9"/>
+                    <constraint firstItem="faa-7b-oE4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vZP-83-el1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="sSA-2T-5bo" secondAttribute="trailing" constant="10" id="ypg-cU-9y6"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="866-nF-m0l"/>
+                        <exclude reference="cl0-Ky-3CW"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+            <connections>
+                <outlet property="msgLabel" destination="sSA-2T-5bo" id="PGG-Gm-e7P"/>
+                <outlet property="titleLabel" destination="faa-7b-oE4" id="Zfz-hS-taw"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="-15.5"/>
+        </tableViewCell>
+    </objects>
+</document>

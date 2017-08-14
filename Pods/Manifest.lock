@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.5.0)
+  - ReactiveSwift (2.0.0):
+    - Result (~> 3.2)
+  - Result (3.2.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - ReactiveSwift (~> 2.0)
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  ReactiveSwift: 36339167e571774d936482d0f6512f5118a74731
+  Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
+
+PODFILE CHECKSUM: 76306c4cc1053c3a97609f9207e1d262045f6297
+
+COCOAPODS: 1.2.1

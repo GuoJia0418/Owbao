@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JSInvitedViewController" customModule="DLapp" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomButton" destination="LD2-Cz-R26" id="J0k-zM-qpj"/>
+                <outlet property="tableView" destination="PE6-JI-LhT" id="b6D-M8-B3G"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PE6-JI-LhT">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="f2r-X1-WlM"/>
+                        <outlet property="delegate" destination="-1" id="t2g-e2-zBY"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LD2-Cz-R26">
+                    <rect key="frame" x="20" y="617" width="335" height="40"/>
+                    <color key="backgroundColor" red="0.90980392156862744" green="0.25098039215686274" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="立即邀请好友"/>
+                    <connections>
+                        <action selector="bottomAction:" destination="-1" eventType="touchUpInside" id="iv8-ts-D5C"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PE6-JI-LhT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="08c-bf-jSg"/>
+                <constraint firstAttribute="bottom" secondItem="PE6-JI-LhT" secondAttribute="bottom" constant="60" id="74Q-jM-xWb"/>
+                <constraint firstAttribute="bottom" secondItem="LD2-Cz-R26" secondAttribute="bottom" constant="10" id="DuZ-SR-YXh"/>
+                <constraint firstAttribute="trailing" secondItem="PE6-JI-LhT" secondAttribute="trailing" id="LjB-md-31Y"/>
+                <constraint firstItem="LD2-Cz-R26" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Mb4-bv-oER"/>
+                <constraint firstAttribute="trailing" secondItem="LD2-Cz-R26" secondAttribute="trailing" constant="20" id="UyX-oK-KIo"/>
+                <constraint firstItem="PE6-JI-LhT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tXI-AU-HEu"/>
+                <constraint firstItem="LD2-Cz-R26" firstAttribute="top" secondItem="PE6-JI-LhT" secondAttribute="bottom" constant="10" id="xtG-m3-Sr1"/>
+            </constraints>
+            <point key="canvasLocation" x="-420" y="-95"/>
+        </view>
+    </objects>
+</document>

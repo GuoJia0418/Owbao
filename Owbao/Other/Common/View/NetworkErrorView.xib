@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NetworkErrorView" customModule="DLapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_record" translatesAutoresizingMaskIntoConstraints="NO" id="W5U-9E-kFy"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加载失败请稍后点击刷新" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4n-ow-qo0">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="Axb-hO-c3f"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.56862745098039214" green="0.56862745098039214" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="s4n-ow-qo0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1yF-N9-Ygf"/>
+                <constraint firstAttribute="trailing" secondItem="s4n-ow-qo0" secondAttribute="trailing" id="7YU-di-TP2"/>
+                <constraint firstItem="s4n-ow-qo0" firstAttribute="top" secondItem="W5U-9E-kFy" secondAttribute="bottom" constant="8" id="EMg-Ec-Ssz"/>
+                <constraint firstItem="W5U-9E-kFy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HU9-6g-nDD"/>
+                <constraint firstItem="s4n-ow-qo0" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="iTk-66-7eH"/>
+            </constraints>
+            <connections>
+                <outlet property="errInoLB" destination="s4n-ow-qo0" id="UzM-21-00p"/>
+                <outlet property="errorImageVW" destination="W5U-9E-kFy" id="DyO-Lf-Kod"/>
+            </connections>
+            <point key="canvasLocation" x="166" y="311"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_record" width="38" height="48"/>
+    </resources>
+</document>

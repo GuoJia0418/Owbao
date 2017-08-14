@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InvestActivityDetailFooterView" customModule="DLapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyO-12-yWG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="buttonClickAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Uhl-df-XP9"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看更多标的信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iic-TB-no0">
+                    <rect key="frame" x="126.5" y="15.5" width="122.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="22L-Kw-YgR">
+                    <rect key="frame" x="106.5" y="19" width="15" height="11"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="QHC-Qw-Are"/>
+                        <constraint firstAttribute="height" constant="11" id="UOj-ZQ-pSp"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AyO-12-yWG" secondAttribute="trailing" id="7dK-kZ-w5e"/>
+                <constraint firstItem="Iic-TB-no0" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BEw-ZW-geU"/>
+                <constraint firstItem="Iic-TB-no0" firstAttribute="leading" secondItem="22L-Kw-YgR" secondAttribute="trailing" constant="5" id="MVL-5N-tGx"/>
+                <constraint firstItem="AyO-12-yWG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NTe-fG-7ty"/>
+                <constraint firstItem="Iic-TB-no0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Q4h-ag-GG6"/>
+                <constraint firstAttribute="bottom" secondItem="AyO-12-yWG" secondAttribute="bottom" id="Qd0-Hc-5fY"/>
+                <constraint firstItem="22L-Kw-YgR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="cG3-MQ-8Ea"/>
+                <constraint firstItem="AyO-12-yWG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gbW-os-IKu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33.5" y="-254.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow" width="15" height="11"/>
+    </resources>
+</document>

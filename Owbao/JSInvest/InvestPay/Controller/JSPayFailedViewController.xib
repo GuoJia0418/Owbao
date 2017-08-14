@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JSPayFailedViewController" customModule="DLapp" customModuleProvider="target">
+            <connections>
+                <outlet property="alertLabel" destination="5fC-LU-Xe4" id="Js6-0D-jvc"/>
+                <outlet property="failedLabel" destination="ptn-wX-UGh" id="gCH-Df-unk"/>
+                <outlet property="repayButton" destination="eQQ-kd-F1e" id="6CF-eV-rnK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQQ-kd-F1e">
+                    <rect key="frame" x="20" y="309.5" width="335" height="48"/>
+                    <color key="backgroundColor" red="0.86985266208648682" green="0.33556833863258362" blue="0.31185591220855713" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="Srp-0t-EZr"/>
+                    </constraints>
+                    <state key="normal" title="重新支付"/>
+                    <connections>
+                        <action selector="repayClick:" destination="-1" eventType="touchUpInside" id="I6F-eF-eyH"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptn-wX-UGh">
+                    <rect key="frame" x="15" y="228.5" width="345" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付失败" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fC-LU-Xe4">
+                    <rect key="frame" x="154.5" y="190.5" width="66" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="js_pay_fail" translatesAutoresizingMaskIntoConstraints="NO" id="GMe-4e-LAt">
+                    <rect key="frame" x="167.5" y="130.5" width="40" height="40"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eQQ-kd-F1e" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5jE-i8-4BT"/>
+                <constraint firstAttribute="trailing" secondItem="eQQ-kd-F1e" secondAttribute="trailing" constant="20" id="CoU-BZ-nsh"/>
+                <constraint firstItem="ptn-wX-UGh" firstAttribute="top" secondItem="5fC-LU-Xe4" secondAttribute="bottom" constant="18" id="FKn-ZG-Gj9"/>
+                <constraint firstItem="eQQ-kd-F1e" firstAttribute="top" secondItem="ptn-wX-UGh" secondAttribute="bottom" constant="65" id="RXY-ZQ-1Px"/>
+                <constraint firstItem="eQQ-kd-F1e" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="SDy-id-AGp"/>
+                <constraint firstItem="GMe-4e-LAt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Yvj-z0-wsD"/>
+                <constraint firstItem="5fC-LU-Xe4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aTr-qx-IVS"/>
+                <constraint firstItem="eQQ-kd-F1e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="cik-ct-Onf"/>
+                <constraint firstItem="5fC-LU-Xe4" firstAttribute="top" secondItem="GMe-4e-LAt" secondAttribute="bottom" constant="20" id="gEN-Ln-gs5"/>
+                <constraint firstAttribute="trailing" secondItem="ptn-wX-UGh" secondAttribute="trailing" constant="15" id="gnc-hf-7Bs"/>
+                <constraint firstItem="ptn-wX-UGh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="y1c-39-32O"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="js_pay_fail" width="40" height="40"/>
+    </resources>
+</document>

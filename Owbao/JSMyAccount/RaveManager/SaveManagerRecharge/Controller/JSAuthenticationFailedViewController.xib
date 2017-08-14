@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JSAuthenticationFailedViewController" customModule="DLapp" customModuleProvider="target">
+            <connections>
+                <outlet property="failedBtn" destination="NGG-g9-Edf" id="dY9-ah-hQv"/>
+                <outlet property="failedMsgLabel" destination="ytw-N1-RK6" id="NiG-Pq-T0g"/>
+                <outlet property="failedTitleLabel" destination="vvY-qJ-TFI" id="BdG-kg-SDX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGG-g9-Edf">
+                    <rect key="frame" x="20" y="310" width="335" height="48"/>
+                    <color key="backgroundColor" red="0.92549019607843142" green="0.36078431372549019" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="EDU-61-kWv"/>
+                    </constraints>
+                    <state key="normal" title="重新绑定"/>
+                    <connections>
+                        <action selector="failedBtnClick:" destination="-1" eventType="touchUpInside" id="jkJ-pW-uIz"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="失败原因" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytw-N1-RK6">
+                    <rect key="frame" x="0.0" y="225" width="375" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="绑卡失败" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvY-qJ-TFI">
+                    <rect key="frame" x="0.0" y="187" width="375" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="js_pay_fail" translatesAutoresizingMaskIntoConstraints="NO" id="DM4-Hd-u5q">
+                    <rect key="frame" x="168" y="127" width="40" height="40"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NGG-g9-Edf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5cq-nD-ig0"/>
+                <constraint firstAttribute="trailing" secondItem="NGG-g9-Edf" secondAttribute="trailing" constant="20" id="EbR-Ha-Pgn"/>
+                <constraint firstItem="DM4-Hd-u5q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ViN-dd-eGc"/>
+                <constraint firstItem="NGG-g9-Edf" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Zfx-1D-bPf"/>
+                <constraint firstItem="ytw-N1-RK6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZoZ-XD-eHs"/>
+                <constraint firstItem="NGG-g9-Edf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="f2C-TO-oTw"/>
+                <constraint firstItem="vvY-qJ-TFI" firstAttribute="top" secondItem="DM4-Hd-u5q" secondAttribute="bottom" constant="20" id="gME-Lo-pIg"/>
+                <constraint firstItem="ytw-N1-RK6" firstAttribute="top" secondItem="vvY-qJ-TFI" secondAttribute="bottom" constant="18" id="jUf-h7-ouG"/>
+                <constraint firstItem="vvY-qJ-TFI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="m6q-oh-52y"/>
+                <constraint firstAttribute="trailing" secondItem="ytw-N1-RK6" secondAttribute="trailing" id="qyp-xz-3Vb"/>
+                <constraint firstItem="NGG-g9-Edf" firstAttribute="top" secondItem="ytw-N1-RK6" secondAttribute="bottom" constant="69" id="v9U-IY-Vjb"/>
+                <constraint firstAttribute="trailing" secondItem="vvY-qJ-TFI" secondAttribute="trailing" id="xH7-oZ-gJd"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="js_pay_fail" width="40" height="40"/>
+    </resources>
+</document>

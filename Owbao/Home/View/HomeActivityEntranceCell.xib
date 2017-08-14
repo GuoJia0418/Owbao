@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="205" id="KGk-i7-Jjw" customClass="HomeActivityEntranceCell" customModule="DLapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="205"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="204.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEJ-rV-rKR">
+                        <rect key="frame" x="8" y="-2" width="148" height="204"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="YEJ-rV-rKR" secondAttribute="height" multiplier="172:146" priority="900" id="brH-nY-eTV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" backgroundImage="videoBg1">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="videoBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2hJ-0v-y6h"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfq-aI-ONB">
+                        <rect key="frame" x="166" y="-2" width="147" height="204"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rfq-aI-ONB" secondAttribute="height" multiplier="172:146" priority="900" id="JtY-F6-V2q"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" backgroundImage="videoBg2"/>
+                        <connections>
+                            <action selector="videoSecondClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Lwf-eq-PgF"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rfq-aI-ONB" firstAttribute="leading" secondItem="YEJ-rV-rKR" secondAttribute="trailing" constant="10" id="6Og-GP-VSH"/>
+                    <constraint firstItem="rfq-aI-ONB" firstAttribute="leading" secondItem="YEJ-rV-rKR" secondAttribute="trailing" constant="10" id="6Q9-R7-OBh"/>
+                    <constraint firstItem="rfq-aI-ONB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-10" id="Fy0-f5-R67"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="YEJ-rV-rKR" secondAttribute="bottom" constant="-5" id="Mnr-Jb-Cg2"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rfq-aI-ONB" secondAttribute="trailing" id="Tj2-ug-8eu"/>
+                    <constraint firstItem="YEJ-rV-rKR" firstAttribute="width" secondItem="rfq-aI-ONB" secondAttribute="width" id="cO0-ee-VLW"/>
+                    <constraint firstItem="YEJ-rV-rKR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-10" id="sRJ-aW-ZGK"/>
+                    <constraint firstItem="YEJ-rV-rKR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="tiP-ox-XBh"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="rfq-aI-ONB" secondAttribute="bottom" constant="-5" id="zfZ-HB-FYi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93727207183837891" green="0.93725192546844482" blue="0.93725597858428955" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <connections>
+                <outlet property="videoFirstBtn" destination="YEJ-rV-rKR" id="f2L-YH-7lj"/>
+                <outlet property="videoSecondBtn" destination="rfq-aI-ONB" id="tlf-WE-8C5"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="132.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="videoBg1" width="146" height="124"/>
+        <image name="videoBg2" width="146" height="124"/>
+    </resources>
+</document>

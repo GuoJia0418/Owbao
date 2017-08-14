@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JSLotaryView" customModule="DLapp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JSLotaryView" customModule="DLapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gS-pb-wUB" userLabel="bgView">
+                    <rect key="frame" x="50.5" y="195.5" width="273" height="276"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="js_share_lotary" translatesAutoresizingMaskIntoConstraints="NO" id="UQd-aV-D9l">
+                            <rect key="frame" x="0.0" y="0.0" width="273" height="276"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXO-g0-vFu">
+                            <rect key="frame" x="192.5" y="-0.5" width="80" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="EBV-PZ-Q15"/>
+                                <constraint firstAttribute="height" constant="50" id="p3V-tP-3AK"/>
+                            </constraints>
+                            <connections>
+                                <action selector="closeClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZZa-sk-q70"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="9gS-pb-wUB" secondAttribute="height" multiplier="273:276" id="Lcz-Ho-dns"/>
+                        <constraint firstAttribute="trailing" secondItem="UQd-aV-D9l" secondAttribute="trailing" id="LtC-m1-Per"/>
+                        <constraint firstAttribute="trailing" secondItem="cXO-g0-vFu" secondAttribute="trailing" id="NB5-dZ-aes"/>
+                        <constraint firstAttribute="bottom" secondItem="UQd-aV-D9l" secondAttribute="bottom" id="OQ2-Vq-TWa"/>
+                        <constraint firstItem="cXO-g0-vFu" firstAttribute="top" secondItem="9gS-pb-wUB" secondAttribute="top" id="aHA-A7-ukO"/>
+                        <constraint firstAttribute="height" constant="276" id="bpg-aU-7Eq"/>
+                        <constraint firstItem="UQd-aV-D9l" firstAttribute="leading" secondItem="9gS-pb-wUB" secondAttribute="leading" id="jvv-kz-A1M"/>
+                        <constraint firstItem="UQd-aV-D9l" firstAttribute="top" secondItem="9gS-pb-wUB" secondAttribute="top" id="keB-1b-Oii"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9gS-pb-wUB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NI9-3A-Nak"/>
+                <constraint firstItem="9gS-pb-wUB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TWw-n7-bfb"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="js_share_lotary" width="273" height="276"/>
+    </resources>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NoticeCell" customModule="DLapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORE-fb-SmS">
+                        <color key="backgroundColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="gwT-M3-PT9"/>
+                        </constraints>
+                    </view>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="d6a-he-Cgb">
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.87450980392156863" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="oAv-SQ-w7N">
+                            <size key="itemSize" width="49" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="KGk-i7-Jjw" id="q8F-uR-GD9"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="Zve-Ym-jmA"/>
+                        </connections>
+                    </collectionView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_trumpet" translatesAutoresizingMaskIntoConstraints="NO" id="fie-nK-9N6">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="IzN-o0-SQE"/>
+                            <constraint firstAttribute="height" constant="20" id="vHY-hZ-tWK"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.99607843137254903" green="0.87058823529411766" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="fie-nK-9N6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-2" id="0wR-DY-KLV"/>
+                    <constraint firstItem="fie-nK-9N6" firstAttribute="centerY" secondItem="d6a-he-Cgb" secondAttribute="centerY" id="Dag-0h-fmX"/>
+                    <constraint firstAttribute="trailing" secondItem="ORE-fb-SmS" secondAttribute="trailing" id="LDZ-29-ift"/>
+                    <constraint firstItem="d6a-he-Cgb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="LP0-5o-sZq"/>
+                    <constraint firstItem="d6a-he-Cgb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="Ovk-wW-A5T"/>
+                    <constraint firstAttribute="trailing" secondItem="d6a-he-Cgb" secondAttribute="trailing" constant="8" id="bL5-TK-MIC"/>
+                    <constraint firstAttribute="bottom" secondItem="d6a-he-Cgb" secondAttribute="bottom" id="bua-Lh-LrV"/>
+                    <constraint firstItem="ORE-fb-SmS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="sHq-Y3-sl9"/>
+                    <constraint firstItem="ORE-fb-SmS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wX9-r3-N2i"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="d6a-he-Cgb" id="w6q-mI-TJS"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="263"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ico_trumpet" width="19" height="18"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_Owbao {
+  umbrella header "Pods-Owbao-umbrella.h"
+
+  export *
+  module * { export * }
+}

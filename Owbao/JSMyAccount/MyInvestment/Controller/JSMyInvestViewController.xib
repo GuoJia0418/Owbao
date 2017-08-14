@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JSMyInvestViewController" customModule="DLapp" customModuleProvider="target">
+            <connections>
+                <outlet property="listView" destination="8Hc-FK-zf1" id="IZR-sU-KmA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Hc-FK-zf1">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mP-9A-BdE">
+                    <rect key="frame" x="0.0" y="619" width="375" height="48"/>
+                    <color key="backgroundColor" red="1" green="0.99998784065246582" blue="0.99999213218688965" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="K8V-kp-LhF"/>
+                    </constraints>
+                    <state key="normal" title="查看历史记录">
+                        <color key="titleColor" red="0.33342772722244263" green="0.3334197998046875" blue="0.33342140913009644" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="seeHistoryClick:" destination="-1" eventType="touchUpInside" id="idA-Cv-lZP"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="js_myInvest_history" translatesAutoresizingMaskIntoConstraints="NO" id="Pgf-Qa-6Yr">
+                    <rect key="frame" x="109.5" y="635.5" width="16" height="15"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.94511431455612183" green="0.94509398937225342" blue="0.94509804248809814" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="8Hc-FK-zf1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2xU-CL-DFQ"/>
+                <constraint firstAttribute="bottom" secondItem="1mP-9A-BdE" secondAttribute="bottom" id="Ghd-HA-h6K"/>
+                <constraint firstAttribute="trailing" secondItem="1mP-9A-BdE" secondAttribute="trailing" id="ZoT-sX-efj"/>
+                <constraint firstItem="1mP-9A-BdE" firstAttribute="top" secondItem="8Hc-FK-zf1" secondAttribute="bottom" id="bgB-ff-1Gy"/>
+                <constraint firstItem="1mP-9A-BdE" firstAttribute="top" secondItem="8Hc-FK-zf1" secondAttribute="bottom" id="cwf-QG-Z9w"/>
+                <constraint firstItem="1mP-9A-BdE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="exg-yo-VPL"/>
+                <constraint firstAttribute="bottom" secondItem="8Hc-FK-zf1" secondAttribute="bottom" constant="60" placeholder="YES" id="sOR-Mr-rki"/>
+                <constraint firstAttribute="trailing" secondItem="8Hc-FK-zf1" secondAttribute="trailing" id="ugL-Mb-OXO"/>
+                <constraint firstItem="Pgf-Qa-6Yr" firstAttribute="centerY" secondItem="1mP-9A-BdE" secondAttribute="centerY" id="uzO-Vd-4Nx"/>
+                <constraint firstItem="8Hc-FK-zf1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wV1-Qx-IFE"/>
+                <constraint firstItem="Pgf-Qa-6Yr" firstAttribute="centerX" secondItem="1mP-9A-BdE" secondAttribute="centerX" constant="-70" id="x6K-cI-gUv"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="sOR-Mr-rki"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="js_myInvest_history" width="16" height="15"/>
+    </resources>
+</document>

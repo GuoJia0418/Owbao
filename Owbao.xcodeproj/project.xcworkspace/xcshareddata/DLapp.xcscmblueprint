@@ -1,0 +1,27 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2fb05514-a403-8c46-be57-35507eb21946++479",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "2fb05514-a403-8c46-be57-35507eb21946++479" : {
+      "DVTSourceControlWorkingCopyRepositoryBranchesLocationKey" : "Code\/App_Code\/DR_IOS\/JSApp2.0.0\/branches",
+      "DVTSourceControlWorkingCopyRepositoryTagsLocationKey" : "Code\/App_Code\/DR_IOS\/JSApp2.0.0\/tags",
+      "DVTSourceControlWorkingCopyRepositoryPrimaryBranchLocationKey" : "Code\/App_Code\/DR_IOS\/JSApp2.0.0\/trunk"
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2fb05514-a403-8c46-be57-35507eb21946++479" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C60DD093-35EA-48AE-8B71-63F323EEE05D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2fb05514-a403-8c46-be57-35507eb21946++479" : "JSApp2.1.1\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DLapp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DLapp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.1.245\/svn\/PRO_P2P",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2fb05514-a403-8c46-be57-35507eb21946++479"
+    }
+  ]
+}
