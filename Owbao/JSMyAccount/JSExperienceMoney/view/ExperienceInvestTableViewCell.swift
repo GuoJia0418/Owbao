@@ -16,7 +16,7 @@ class ExperienceInvestTableViewCell: UITableViewCell {
         if self.indicatorLabel != nil {
             self.indicatorLabel.layer.cornerRadius = 9.0
             self.indicatorLabel.layer.masksToBounds = true
-            self.indicatorLabel.layer.borderColor = UIColorFromRGB(249, green: 0, blue: 37).cgColor
+            self.indicatorLabel.layer.borderColor = Global_red.cgColor
             self.indicatorLabel.layer.borderWidth = 1.0
         }
     }

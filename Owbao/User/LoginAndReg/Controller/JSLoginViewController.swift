@@ -458,7 +458,7 @@ class JSLoginViewController: BaseViewController,UIAlertViewDelegate,GraphCodeVie
             if (telPhoneLength == 0 || telPhoneLength == 11) && (passwordLength >= 6 && passwordLength <= 18)
             {
                 self.loginBtn.isEnabled = true
-                self.loginBtn.backgroundColor = DEFAULT_REDCOLOR
+                self.loginBtn.backgroundColor = Global_yellow_deep
             }
             else
             {
@@ -472,7 +472,7 @@ class JSLoginViewController: BaseViewController,UIAlertViewDelegate,GraphCodeVie
             if (telPhoneLength == 0 || telPhoneLength == 11) && (passwordLength >= 6 && passwordLength <= 18) && picCodeLength == 4
             {
                 self.loginBtn.isEnabled = true
-                self.loginBtn.backgroundColor = UIColor.red
+                self.loginBtn.backgroundColor = Global_yellow_deep
             }
             else
             {
@@ -529,19 +529,19 @@ class JSLoginViewController: BaseViewController,UIAlertViewDelegate,GraphCodeVie
     {
         if textField == phoneNumTextField
         {
-            phoneIcon.image = UIImage(named: "js_login_red_mobile")
-            phoneLineView.backgroundColor = DEFAULT_REDCOLOR
+            phoneIcon.image = UIImage(named: "js_login_red_mobile")?.withTintColor(Global_yellow_deep)
+            phoneLineView.backgroundColor = Global_yellow_deep
             
         }
         else if textField == loginPwdTextField
         {
-            pwdIcon.image = UIImage(named: "js_login_red_pwd")
-            pwdLineView.backgroundColor = DEFAULT_REDCOLOR
+            pwdIcon.image = UIImage(named: "js_login_red_pwd")?.withTintColor(Global_yellow_deep)
+            pwdLineView.backgroundColor = Global_yellow_deep
         }
         else if textField == imageVerifyCodeTextField
         {
-            verifyCodeIcon.image = UIImage(named: "js_login_red_protect")
-            verifyCodeLineView.backgroundColor = DEFAULT_REDCOLOR
+            verifyCodeIcon.image = UIImage(named: "js_login_red_protect")?.withTintColor(Global_yellow_deep)
+            verifyCodeLineView.backgroundColor = Global_yellow_deep
         }
         return true 
     }

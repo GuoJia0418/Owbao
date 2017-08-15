@@ -24,7 +24,7 @@ class JSExprienceInvestHeadTableViewCell: UITableViewCell {
         let amount = (experienceMapModel.experienceAmount?.experAmount)!
         let amountString = "\(amount)元"
         let attributeString = NSMutableAttributedString(string: amountString)
-        attributeString.addAttribute(NSForegroundColorAttributeName, value: UIColorFromRGB(233, green: 48, blue: 56), range: NSString(string: amountString).range(of: "\(amount)"))
+        attributeString.addAttribute(NSForegroundColorAttributeName, value: Global_red, range: NSString(string: amountString).range(of: "\(amount)"))
         attributeString.addAttribute(NSForegroundColorAttributeName, value: UIColor.darkGray, range: NSString(string: amountString).range(of: "元"))
         
         self.amountLabel.attributedText = attributeString

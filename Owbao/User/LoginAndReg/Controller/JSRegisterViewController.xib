@@ -56,7 +56,7 @@
                                     <rect key="frame" x="187.5" y="0.0" width="93.5" height="48"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <state key="normal" title="获取验证码">
-                                        <color key="titleColor" red="0.83071672916412354" green="0.38435909152030945" blue="0.35835254192352295" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="titleColor" red="1" green="0.39215686274509803" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
                                         <action selector="getVerifyCodeClick:" destination="-1" eventType="touchUpInside" id="s2g-F5-hmZ"/>
@@ -266,7 +266,7 @@
                         <action selector="registerClick:" destination="-1" eventType="touchUpInside" id="qSf-72-93f"/>
                     </connections>
                 </button>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zsi-bq-D69" userLabel="fuiouIndicaterLog">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zsi-bq-D69" userLabel="fuiouIndicaterLog">
                     <rect key="frame" x="0.0" y="609" width="375" height="30"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正式接入天府银行资金存管，保障资金安全！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhW-mJ-ckz">

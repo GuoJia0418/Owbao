@@ -393,9 +393,7 @@ class MainViewController: BaseViewController,SDCycleScrollViewDelegate,UITableVi
         
         else if indexPath.section == 5 { //优选理财
             MobClick.event("0400001")
-            let controller = JSInvestFinancingActivityController()
-            controller.type = 2
-            self.navigationController?.pushViewController(controller, animated: true)
+            RootNavigationController.goToInvestList(controller: self)
         }
         
     }

@@ -148,8 +148,8 @@ class JSRegisterViewController: BaseViewController {
         pertProgressView.progressThickness = 0.25
         pertProgressView.startAngle = -90
         pertProgressView.glowAmount = 0
-        pertProgressView.trackColor = DEFAULT_REDCOLOR//底部圈颜色
-        pertProgressView.progressColors = [DEFAULT_REDCOLOR]
+        pertProgressView.trackColor = Global_red//底部圈颜色
+        pertProgressView.progressColors = [Global_red]
         pertProgressView.isHidden = true
         
         //设置UITextField的tag值
@@ -423,7 +423,7 @@ class JSRegisterViewController: BaseViewController {
             MobClick.event("0100006")
             let title = "重发验证码"
             getVerifyCodeBtn?.setTitle("\(title)", for: UIControlState())
-            getVerifyCodeBtn?.setTitleColor(DEFAULT_ORANGECOLOR, for: UIControlState())
+            getVerifyCodeBtn?.setTitleColor(Global_red, for: UIControlState())
             getVerifyCodeBtn?.isEnabled = true
             pertProgressView.isHidden = true
             
@@ -496,17 +496,17 @@ class JSRegisterViewController: BaseViewController {
     {
         if textField == verifyCodeTextField
         {
-            verifyCodeLine.backgroundColor = DEFAULT_REDCOLOR
+            verifyCodeLine.backgroundColor = Global_yellow_deep
         }
         else if textField == pwdTextField
         {
-            pwdLine.backgroundColor = DEFAULT_REDCOLOR
+            pwdLine.backgroundColor = Global_yellow_deep
         }
         else
         {
             if regSwitch.isOn == true
             {
-                recommPhoneLine.backgroundColor = DEFAULT_REDCOLOR
+                recommPhoneLine.backgroundColor = Global_yellow_deep
                 return true
             }
             else
@@ -550,7 +550,7 @@ class JSRegisterViewController: BaseViewController {
         
         if passwordLength >= 6 && passwordLength <= 18 && verifyLength == 4 && (recommPhoneLength == 0 || recommPhoneLength == 11) {
             self.registerBtn.isEnabled = true
-            self.registerBtn.backgroundColor = DEFAULT_REDCOLOR
+            self.registerBtn.backgroundColor = Global_yellow_deep
         } else {
             self.registerBtn.isEnabled = false
             self.registerBtn.backgroundColor = UIColor.gray

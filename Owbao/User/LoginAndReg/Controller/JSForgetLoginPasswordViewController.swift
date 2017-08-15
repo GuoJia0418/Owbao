@@ -122,8 +122,8 @@ class JSForgetLoginPasswordViewController: BaseViewController,UITextFieldDelegat
         pertProgressView.progressThickness = 0.25
         pertProgressView.startAngle = -90
         pertProgressView.glowAmount = 0
-        pertProgressView.trackColor = DEFAULT_REDCOLOR//底部圈颜色
-        pertProgressView.progressColors = [DEFAULT_REDCOLOR]
+        pertProgressView.trackColor = Global_red//底部圈颜色
+        pertProgressView.progressColors = [Global_red]
         pertProgressView.isHidden = true
     }
 
@@ -242,7 +242,7 @@ class JSForgetLoginPasswordViewController: BaseViewController,UITextFieldDelegat
         if passwordLength >= 6 && passwordLength <= 18 && verifyLength == 4 && confirmPwdLength >= 6 && confirmPwdLength <= 18
         {
             self.commitButton.isEnabled = true
-            self.commitButton.backgroundColor = DEFAULT_ORANGECOLOR
+            self.commitButton.backgroundColor = Global_yellow_deep
             
         } else {
             self.commitButton.isEnabled = false
@@ -255,7 +255,7 @@ class JSForgetLoginPasswordViewController: BaseViewController,UITextFieldDelegat
         if seconds == 1  {
             theTimer.invalidate()
             let title = "重发验证码"
-            getVerifyBtn.setTitleColor(DEFAULT_ORANGECOLOR, for: UIControlState())
+            getVerifyBtn.setTitleColor(Global_red, for: UIControlState())
             getVerifyBtn?.setTitle("\(title)", for: UIControlState())
             getVerifyBtn?.isEnabled = true
             pertProgressView.isHidden = true
@@ -277,8 +277,8 @@ class JSForgetLoginPasswordViewController: BaseViewController,UITextFieldDelegat
         pertProgressView.progressThickness = 0.25
         pertProgressView.startAngle = -90
         pertProgressView.glowAmount = 0
-        pertProgressView.trackColor = DEFAULT_REDCOLOR//底部圈颜色
-        pertProgressView.progressColors = [DEFAULT_REDCOLOR]
+        pertProgressView.trackColor = Global_red//底部圈颜色
+        pertProgressView.progressColors = [Global_red]
         pertProgressView.isHidden = true
     }
     
@@ -334,15 +334,15 @@ class JSForgetLoginPasswordViewController: BaseViewController,UITextFieldDelegat
     {
         if textField == verifyCodeTextField
         {
-            getVerifyCodeLineView.backgroundColor = DEFAULT_REDCOLOR
+            getVerifyCodeLineView.backgroundColor = Global_yellow_deep
         }
         else if textField == pwdTextField
         {
-            pwdLineView.backgroundColor = DEFAULT_REDCOLOR
+            pwdLineView.backgroundColor = Global_yellow_deep
         }
         else if textField == confirmPwdTextField
         {
-            confirmPwdLineView.backgroundColor = DEFAULT_REDCOLOR
+            confirmPwdLineView.backgroundColor = Global_yellow_deep
         }
         return true
     }

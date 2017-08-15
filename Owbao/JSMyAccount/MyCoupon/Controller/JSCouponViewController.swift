@@ -61,7 +61,7 @@ class JSCouponViewController: BaseViewController,UITableViewDelegate,UITableView
                 } else if self.couponType == 4 {
                     weakSelf!.errorView.errInoLB.text = "没有翻倍券"
                 }
-                
+                    
                 return
             }
             

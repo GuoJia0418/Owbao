@@ -17,12 +17,6 @@ let PROTOCOL_URL = "https://www.jushengcaifu.com"
 //let BASE_URL = "http://192.168.3.236:8080/awb_app"         //测试嗷呜
 //let PROTOCOL_URL = "http://192.168.1.246"                  //协议总地址
 
-//let BASE_URL = "http://192.168.1.120:8080"         //测试嗷呜
-//let PROTOCOL_URL = "http://192.168.1.120"          //协议总地址
-
-//let BASE_URL = "http://192.168.1.53:8888"          //李煜电脑
-//let PROTOCOL_URL = "http://192.168.1.53"
-
 //let BASE_URL = "http://m.jushengcaifu.com:8181"
 //let PROTOCOL_URL = "https://www.jushengcaifu.com"
 

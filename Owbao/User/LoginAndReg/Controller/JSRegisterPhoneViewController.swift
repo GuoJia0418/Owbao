@@ -59,7 +59,7 @@ class JSRegisterPhoneViewController: BaseViewController {
     func setupView() {
         navigationItem.title = "注册"
         let attributedString = NSMutableAttributedString(string: "已有账号，请登录")
-        attributedString.addAttribute(NSForegroundColorAttributeName, value: DEFAULT_REDCOLOR, range: NSMakeRange("已有账号，".characters.count, "请登录".characters.count))
+        attributedString.addAttribute(NSForegroundColorAttributeName, value: Global_red, range: NSMakeRange("已有账号，".characters.count, "请登录".characters.count))
         loginLabel.attributedText = attributedString
         
         nextBtn.layer.cornerRadius = 5.0
@@ -71,7 +71,7 @@ class JSRegisterPhoneViewController: BaseViewController {
         
         //协议
         let attributedStr = NSMutableAttributedString(string: "点击下一步代表您已阅读并同意《嗷呜宝注册协议》")
-        attributedStr.addAttribute(NSForegroundColorAttributeName, value: DEFAULT_REDCOLOR, range: NSMakeRange("点击下一步代表您已阅读并同意".characters.count, "《嗷呜宝注册协议》".characters.count))
+        attributedStr.addAttribute(NSForegroundColorAttributeName, value: Global_red, range: NSMakeRange("点击下一步代表您已阅读并同意".characters.count, "《嗷呜宝注册协议》".characters.count))
         protocolLabel.attributedText = attributedStr
     }
     
@@ -226,7 +226,7 @@ class JSRegisterPhoneViewController: BaseViewController {
         let telPhoneLength = telPhoneTextField.text?.lengthOfBytes(using: String.Encoding.utf8)
         if telPhoneLength == 11 {
             self.nextBtn.isEnabled = true
-            self.nextBtn.backgroundColor = DEFAULT_REDCOLOR
+            self.nextBtn.backgroundColor = Global_yellow_deep
         } else {
             self.nextBtn.isEnabled = false
             self.nextBtn.backgroundColor = UIColor.gray
@@ -238,7 +238,7 @@ class JSRegisterPhoneViewController: BaseViewController {
     {
         if textField == telPhoneTextField
         {
-            textFieldLine.backgroundColor = DEFAULT_REDCOLOR
+            textFieldLine.backgroundColor = Global_yellow_deep
         }
         return true
     }

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JSWithdrawFuiouViewController" customModule="DLapp" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JSWithdrawFuiouViewController" customModule="Owbao" customModuleProvider="target">
             <connections>
                 <outlet property="alertLabel" destination="lDm-z0-OEh" id="9t8-TF-7df"/>
                 <outlet property="amountTextField" destination="AV7-EH-qqQ" id="HCQ-d8-NgH"/>
@@ -72,7 +71,7 @@
                                             </constraints>
                                         </view>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.85882352941176465" green="0.40000000000000002" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.93615376949310303" green="0.5254252552986145" blue="0.25926163792610168" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstItem="mNq-TC-jBB" firstAttribute="centerX" secondItem="DJX-xK-OOB" secondAttribute="centerX" id="6yY-Ch-J0D"/>
                                         <constraint firstItem="1fc-DA-Hh2" firstAttribute="centerX" secondItem="DJX-xK-OOB" secondAttribute="centerX" id="Zcc-Jq-IJC"/>
@@ -89,7 +88,7 @@
                                             <rect key="frame" x="0.0" y="53" width="110" height="9"/>
                                         </imageView>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.85882352941176465" green="0.40000000000000002" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.93615376949310303" green="0.5254252552986145" blue="0.25926163792610168" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="Aj8-br-LJj" secondAttribute="trailing" id="dO1-62-CWc"/>
                                         <constraint firstItem="Aj8-br-LJj" firstAttribute="centerY" secondItem="XKA-im-aHk" secondAttribute="centerY" id="fGW-OR-nk0"/>
@@ -132,7 +131,7 @@
                                             </constraints>
                                         </view>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.85882352941176465" green="0.40000000000000002" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.93615376949310303" green="0.5254252552986145" blue="0.25926163792610168" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="WQs-qs-vE9" secondAttribute="bottom" constant="14" id="FOK-sv-xl4"/>
                                         <constraint firstItem="MJy-iW-2h2" firstAttribute="centerX" secondItem="WEi-4F-d5b" secondAttribute="centerX" id="Orc-cl-n5z"/>
@@ -149,7 +148,7 @@
                                     </variation>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" red="0.92549019607843142" green="0.36078431372549019" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="backgroundColor" red="0.93615376949310303" green="0.5254252552986145" blue="0.25926163792610168" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="WEi-4F-d5b" secondAttribute="bottom" id="0hX-uQ-ufw"/>
                                 <constraint firstAttribute="bottom" secondItem="DJX-xK-OOB" secondAttribute="bottom" id="1Nu-2m-uNb"/>

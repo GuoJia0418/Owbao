@@ -38,7 +38,7 @@ class ExperienceInvestPopDisplayView: UIView {
         attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.darkGray, range: NSMakeRange(0, attributedString.string.length))
         //红色字体
         let string_1 = NSString(string: attributedString.string)
-         attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColorFromRGB(228, green: 71, blue: 74), range: string_1.range(of: amountString))
+         attributedString.addAttribute(NSForegroundColorAttributeName, value: Global_red, range: string_1.range(of: amountString))
         self.experienceAmountLabel.attributedText = attributedString
     }
     
@@ -49,13 +49,13 @@ class ExperienceInvestPopDisplayView: UIView {
         self.backgroundViewHeightConstrains.constant = constain
         
         //修改图片的颜色
-        self.conformButton.setBackgroundImage(Common.image(with: UIColorFromRGB(220, green: 42, blue: 41)), for: UIControlState())
+        self.conformButton.setBackgroundImage(Common.image(with: Global_yellow_deep), for: UIControlState())
         self.conformButton.setBackgroundImage(Common.image(with: UIColorFromRGB(108, green: 108, blue: 108)), for: UIControlState.disabled)
         
         self.backgroundColor = PopView_BackgroundColor
         self.indicatorButton.layer.cornerRadius = 18.0 / 2
         self.indicatorButton.layer.masksToBounds = true
-        self.indicatorButton.layer.borderColor = UIColorFromRGB(228, green: 71, blue: 74).cgColor
+        self.indicatorButton.layer.borderColor = Global_red.cgColor
         self.indicatorButton.layer.borderWidth = 1.0
     }
     

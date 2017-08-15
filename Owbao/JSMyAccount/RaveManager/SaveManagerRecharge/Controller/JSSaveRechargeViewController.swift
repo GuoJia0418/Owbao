@@ -103,7 +103,7 @@ class JSSaveRechargeViewController: BaseViewController,UITextFieldDelegate {
             if (self.amountTextField.text! as NSString).doubleValue >= 3.00
             {
                 self.commitButton.isEnabled = true
-                self.commitButton.backgroundColor = DEFAULT_REDCOLOR
+                self.commitButton.backgroundColor = Global_yellow_deep
             }
         }
     }
@@ -199,7 +199,7 @@ class JSSaveRechargeViewController: BaseViewController,UITextFieldDelegate {
             if (self.amountTextField.text! as NSString).doubleValue >= 3.00
             {
                 self.commitButton.isEnabled = true
-                self.commitButton.backgroundColor = DEFAULT_REDCOLOR
+                self.commitButton.backgroundColor = Global_yellow_deep
                 
                 let str = "\((self.amountTextField.text! as NSString).doubleValue + (self.balanceAmountLabel.text! as NSString).doubleValue)"
 //                self.balanceTitleLabel.text = "充值后可用余额"
@@ -271,7 +271,7 @@ class JSSaveRechargeViewController: BaseViewController,UITextFieldDelegate {
         else if (self.amountTextField.text! as NSString).doubleValue >= 3.00
         {
             self.commitButton.isEnabled = true
-            self.commitButton.backgroundColor = DEFAULT_REDCOLOR
+            self.commitButton.backgroundColor = Global_yellow_deep
             
             let str = "\((self.amountTextField.text! as NSString).doubleValue + (self.balanceAmountLabel.text! as NSString).doubleValue)"
 //            self.balanceTitleLabel.text = "充值后可用余额"

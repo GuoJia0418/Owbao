@@ -109,7 +109,7 @@
                     <color key="textColor" red="0.27069073915481567" green="0.27068409323692322" blue="0.27068540453910828" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11R-YC-uUI" userLabel="fuiouIndicaterLog">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11R-YC-uUI" userLabel="fuiouIndicaterLog">
                     <rect key="frame" x="0.0" y="510" width="320" height="30"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正式接入天府银行资金存管，保障资金安全！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4Q-lW-3sm">

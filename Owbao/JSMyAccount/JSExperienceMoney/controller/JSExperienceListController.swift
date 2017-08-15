@@ -24,6 +24,11 @@ class JSExperienceListController: BaseViewController,UITableViewDelegate,UITable
     fileprivate var model: MyCouponsModel?
     fileprivate var bottomButtonType: ExperienceBottomButtonType = .noneExperince //默认是无体验金
     
+    lazy var headCell: JSExperienceHeadCell? = {
+        let cell = Bundle.main.loadNibNamed("JSExperienceHeadCell", owner: self, options: nil)![0] as? JSExperienceHeadCell
+        return cell!
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -56,6 +61,13 @@ class JSExperienceListController: BaseViewController,UITableViewDelegate,UITable
         if UserModel.shareInstance.isLogin == 0 {            
             //弹出登录控制器
             JSLoginViewController.presentLoginControllerDismissGoHomeType(self)
+        }
+    }
+    
+    deinit {
+        if self.headCell != nil {
+            self.headCell?.wavaView.stopAnimation()
+            self.headCell = nil
         }
     }
     
@@ -176,13 +188,13 @@ class JSExperienceListController: BaseViewController,UITableViewDelegate,UITable
             
             self.listView.tableFooterView = UIView()
             self.bottomButton.isEnabled = true
-            self.bottomButton.backgroundColor = UIColorFromRGB(228, green: 71, blue: 74)
+            self.bottomButton.backgroundColor = Global_yellow_deep
             
         } else if self.bottomButtonType == .activate {
             
             self.listView.tableFooterView = UIView()
             self.bottomButton.isEnabled = true
-            self.bottomButton.backgroundColor = UIColorFromRGB(228, green: 71, blue: 74)
+            self.bottomButton.backgroundColor = Global_yellow_deep
             self.bottomButton.setTitle("立即激活", for: UIControlState())
             
         } else if self.bottomButtonType == .noneUse {
@@ -240,26 +252,22 @@ class JSExperienceListController: BaseViewController,UITableViewDelegate,UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.section == 0 {
-            
-            var cell = tableView.dequeueReusableCell(withIdentifier: "JSExperienceHeadCell") as? JSExperienceHeadCell
-            if cell == nil {
-                cell = Bundle.main.loadNibNamed("JSExperienceHeadCell", owner: self, options: nil)?.last as? JSExperienceHeadCell
-            }
-            
+
             if self.model != nil {
                 if self.model?.map != nil {
-                    cell?.configureCell((self.model?.map)!)
+                    self.headCell?.configureCell((self.model?.map)!)
                 }
             }
             
             //点击查看体验金回调
-            cell?.checkButtonCallback = {
+            weak var weakSelf = self
+            self.headCell?.checkButtonCallback = {
                 let controller = LocationController()
                 controller.model = HomeBannerModel(dict: ["location": BASE_URL + ExperienceRule as AnyObject,"title":"体验金使用规则" as AnyObject])
-                self.navigationController?.pushViewController(controller, animated: true)
+                weakSelf!.navigationController?.pushViewController(controller, animated: true)
             }
             
-            return cell!
+            return self.headCell!
             
         } else {
             

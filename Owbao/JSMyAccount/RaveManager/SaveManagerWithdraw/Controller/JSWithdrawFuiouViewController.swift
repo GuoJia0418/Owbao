@@ -190,7 +190,7 @@ class JSWithdrawFuiouViewController: BaseViewController,UITextFieldDelegate,UIAl
             if (self.amountTextField.text! as NSString).doubleValue < 3.00
             {
                 self.alertLabel.text = "提现金额至少为3元"
-                self.alertLabel.textColor = DEFAULT_REDCOLOR
+                self.alertLabel.textColor = Global_red
                 return
             }
 //            else if (self.amountTextField.text! as NSString).doubleValue >= 3.00 && (self.amountTextField.text! as NSString).doubleValue <= model?.funds && (self.amountTextField.text! as NSString).doubleValue <= 500000.00
@@ -218,7 +218,7 @@ class JSWithdrawFuiouViewController: BaseViewController,UITextFieldDelegate,UIAl
 //                self.commitButton.isEnabled = false
 //                self.commitButton.backgroundColor = UIColorFromRGB(204, green: 204, blue: 204)
                 self.alertLabel.text = "提现金额至少为1元"
-                self.alertLabel.textColor = DEFAULT_REDCOLOR
+                self.alertLabel.textColor = Global_red
 //                delay(1.5, block: {
 //                    self.alertLabel.text = ""
 //                })
@@ -345,13 +345,13 @@ class JSWithdrawFuiouViewController: BaseViewController,UITextFieldDelegate,UIAl
                 self.commitButton.backgroundColor = UIColorFromRGB(204, green: 204, blue: 204)
 
                 self.alertLabel.text = "提现金额至少为3元"
-                self.alertLabel.textColor = DEFAULT_REDCOLOR
+                self.alertLabel.textColor = Global_red
             }
             else if (self.amountTextField.text! as NSString).doubleValue >= 3.00 && (self.amountTextField.text! as NSString).doubleValue <= model?.fuiou_balance && (self.amountTextField.text! as NSString).doubleValue <= 500000.00
             {
 
                 self.commitButton.isEnabled = true
-                self.commitButton.backgroundColor = DEFAULT_REDCOLOR
+                self.commitButton.backgroundColor = Global_yellow_deep
                 alertLabel.textColor = UIColor.black
                 setAttributedString("预计下个工作日16点前到账，手续费2.00元", subString:"2.00", location: "预计下个工作日16点前到账，手续费".characters.count, length: "2.00".characters.count, label: alertLabel)
 
@@ -361,7 +361,7 @@ class JSWithdrawFuiouViewController: BaseViewController,UITextFieldDelegate,UIAl
                 self.commitButton.isEnabled = false
                 self.commitButton.backgroundColor = UIColorFromRGB(204, green: 204, blue: 204)
                 self.alertLabel.text = "提现金额超过可用余额"
-                self.alertLabel.textColor = DEFAULT_REDCOLOR
+                self.alertLabel.textColor = Global_red
             }
         }
         else
@@ -371,7 +371,7 @@ class JSWithdrawFuiouViewController: BaseViewController,UITextFieldDelegate,UIAl
                 self.commitButton.isEnabled = false
                 self.commitButton.backgroundColor = UIColorFromRGB(204, green: 204, blue: 204)
                 self.alertLabel.text = "提现金额至少为1元"
-                self.alertLabel.textColor = DEFAULT_REDCOLOR
+                self.alertLabel.textColor = Global_red
 
 //                amountTextField.placeholder = "最少3元"
 //                setAttributedString("预计下个工作日16点前到账，手续费2.00元", subString:"2.00", location: "预计下个工作日16点前到账，手续费".characters.count, length: "2.00".characters.count, label: alertLabel)
@@ -379,7 +379,7 @@ class JSWithdrawFuiouViewController: BaseViewController,UITextFieldDelegate,UIAl
             else if (self.amountTextField.text! as NSString).doubleValue >= 1.00 && (self.amountTextField.text! as NSString).doubleValue <= model?.fuiou_balance && (self.amountTextField.text! as NSString).doubleValue <= 500000.00
             {
                 self.commitButton.isEnabled = true
-                self.commitButton.backgroundColor = DEFAULT_REDCOLOR
+                self.commitButton.backgroundColor = Global_yellow_deep
 
                 alertLabel.textColor = UIColor.black
                 setAttributedString("预计下个工作日16点前到账，手续费0.00元", subString:"0.00", location: "预计下个工作日16点前到账，手续费".characters.count, length: "0.00".characters.count, label: alertLabel)
@@ -388,12 +388,12 @@ class JSWithdrawFuiouViewController: BaseViewController,UITextFieldDelegate,UIAl
                 self.commitButton.isEnabled = false
                 self.commitButton.backgroundColor = UIColorFromRGB(204, green: 204, blue: 204)
                 self.alertLabel.text = "提现金额超过可用余额"
-                self.alertLabel.textColor = DEFAULT_REDCOLOR
+                self.alertLabel.textColor = Global_red
             } else {
                 self.commitButton.isEnabled = false
                 self.commitButton.backgroundColor = UIColorFromRGB(204, green: 204, blue: 204)
                 self.alertLabel.text = "提现金额超过银行限额"
-                self.alertLabel.textColor = DEFAULT_REDCOLOR
+                self.alertLabel.textColor = Global_red
             }
         }
     }

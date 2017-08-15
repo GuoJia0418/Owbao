@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JSRegisterSuccessViewController" customModule="JSApp" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JSRegisterSuccessViewController" customModule="Owbao" customModuleProvider="target">
             <connections>
                 <outlet property="gotoVerifyBtn" destination="eTI-0s-JXk" id="ArT-gY-m6Z"/>
                 <outlet property="regMsgLabel" destination="t28-vm-FYB" id="xRa-q6-Lp1"/>
@@ -67,7 +67,7 @@
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTI-0s-JXk">
                     <rect key="frame" x="20" y="340" width="335" height="48"/>
-                    <color key="backgroundColor" red="0.86985266208648682" green="0.33556833863258362" blue="0.31185591220855713" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="backgroundColor" red="0.96749508380889893" green="0.7922518253326416" blue="0.2671787440776825" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="eC0-lr-wre"/>
                     </constraints>
@@ -77,7 +77,7 @@
                         <action selector="confirmClick:" destination="-1" eventType="touchUpInside" id="ukf-5M-reE"/>
                     </connections>
                 </button>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tL7-z7-Yi6" userLabel="fuiouIndicaterLog">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tL7-z7-Yi6" userLabel="fuiouIndicaterLog">
                     <rect key="frame" x="0.0" y="611" width="375" height="28"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正式接入天府银行资金存管，保障资金安全！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvw-o5-lHz">

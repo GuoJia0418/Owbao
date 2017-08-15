@@ -15,6 +15,7 @@ class JSExperienceHeadCell: UITableViewCell {
     
     var checkButtonCallback: (() -> ())?
     
+    @IBOutlet weak var wavaView: JSWaveAnimateView!
     override func awakeFromNib() {
         super.awakeFromNib()
     }

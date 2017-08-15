@@ -59,7 +59,7 @@ class JSRegisterSuccessViewController: BaseViewController {
                     let rangeString = NSString(string: string)
                     let rangeString_root = NSString(string: rootString)
                     
-                    attriString.addAttribute(NSForegroundColorAttributeName, value: DEFAULT_REDCOLOR, range: rangeString_root.range(of: rangeString as String))
+                    attriString.addAttribute(NSForegroundColorAttributeName, value: Global_red, range: rangeString_root.range(of: rangeString as String))
                 }
                 
                 self.regSuccessMessageLabel.attributedText = attriString
